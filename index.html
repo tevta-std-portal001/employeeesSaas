@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="icon" href="./images/weblogo.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Login Page</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+   
+  </style>
+</head>
+
+
+<body>
+
+  <div class="page">
+
+
+    <!-- =================================
+         DESKTOP HEADER
+    ================================== -->
+
+    <header class="desktop-header">
+
+      <!--
+        LOGO PLACEHOLDER
+
+        Yahan apni image laga dein:
+        <img src="images/logo.png" class="desktop-logo">
+      -->
+
+      <div class="desktop-logo">
+        <img src="./images/weblogo.png" class="desktop-logo">
+      </div>
+
+
+      <nav class="nav">
+
+        <!-- HOME ICON -->
+        <div  class="nav-item" title="Home page button">
+          <a href="" class="nav-icon">
+            <img src="./images/home.png" class="nav-btns">
+          </a>
+        </div>
+
+
+        <!-- INFO ICON -->
+        <div class="nav-item" title="About page button">
+          <a href="" class="nav-icon">
+            <img src="./images/about.png" class="nav-btns">
+          </a>
+        </div>
+
+
+        <!-- SETTINGS ICON -->
+        <div class="nav-item" title="Guide book button">
+          <a href="" class="nav-icon">
+            <img src="./images/guide.png" class="nav-btns">
+          </a>
+        </div>
+
+      </nav>
+
+      <div></div>
+
+    </header>
+
+
+
+    <!-- =================================
+         MOBILE HEADER
+    ================================== -->
+
+    <header class="mobile-header">
+
+      <!-- LOGO PLACEHOLDER -->
+      <div class="mobile-logo">
+         <img src="./images/weblogo.png" class="mobile-logo">
+      </div>
+        <div class="menu-icon">
+          <img onclick="menu()"src="./images/menu.png">
+        </div>
+
+        <!-- menu bar -->
+<section id="menubar">
+  <!-- menu nav -->
+  <div id="menu-nav">
+  <h1 id="menu-hd">Menu bar</h1>
+  <button onclick="mn_cls()">X</button>
+</div>
+
+  <div id="menu-btn-cont">
+  <a  class="menu-i" href="">Home</a>
+  <a  class="menu-i" href="">About Project</a>
+  <a  class="menu-i" href="">Guide video</a>
+  </div>
+    <menufooter>Work for better practice</menufooter>
+
+</section>
+
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================== -->
+
+    <main class="main">
+
+      <h1>Login page</h1>
+
+
+      <!-- LOGIN CARD -->
+
+      <section class="login-card">
+
+        <form class="form">
+
+
+          <!-- EMPLOYEE ID -->
+
+          <input
+            id="employeeId"
+            type="number"
+            class="field"
+            placeholder=" Enter Employee id"
+          >
+
+
+          <!-- NAME -->
+
+          <input
+           id="employeeName"
+            type="text"
+            class="field"
+            placeholder=" Enter your Name"
+          >
+
+
+          <!-- PASSWORD -->
+
+          <input
+          id="loginpass"
+            type="password"
+            class="field"
+            placeholder=" Enter your password"
+          >
+
+
+        <button onclick="submitData()" type="button" class="next-btn">Next</button>
+
+
+
+        </form>
+
+      </section>
+
+    <button class="portal-btn">
+     <a href="https://fireflow444.github.io/Tevta-sallybus-portal/Homepage.html
+     "> Tevta std portal</a>
+    </button>
+    </main>
+
+
+
+    <!-- =================================
+         TEVTA PORTAL
+    ================================== -->
+
+
+
+  </div>
+<script src="engine.js"></script>
+<script src="security.js"></script>
+</body>
+</html>
