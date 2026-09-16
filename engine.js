@@ -26,7 +26,7 @@ async function submitData() {
   console.log("Crypto Result:", cryptoResult);
 
   if (cryptoResult !== true) {
-    alert("Crypto verification failed.");
+    console.log("Crypto verification failed.");
     return;
   }
 
@@ -34,7 +34,7 @@ async function submitData() {
   const employeeName = document.getElementById("employeeName").value.trim();
 
   if (!employeeId || !employeeName) {
-    alert("Employee ID aur Employee Name required hain.");
+    alert("Employee ID ans Employee Name are required.");
     return;
   }
 
@@ -71,19 +71,19 @@ async function submitData() {
 
     if (result.success) {
 
-      alert(result.message);
+      // alert(result.message);
 
       document.getElementById("employeeId").value = "";
       document.getElementById("employeeName").value = "";
-
+      document.getElementById("").value = "";
     } else {
-
+console.error("ERROR:NETWORK ISSUE: DATASHEET~>404");
     }
 
   } catch (error) {
 
     console.error("API Error:", error);
-    alert("SERVER ISSUE");
+    alert("SERVER ISSUE: Query failed");
 
   }
 }
